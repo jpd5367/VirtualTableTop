@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{611280E5-DF4C-9057-EE06-F712F4D83333}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-UnityScript-firstpass</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_WEBPLAYER;WEBPLUG;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_4;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity431/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity431/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Store\Scripts\DBStoreController.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Store\Scripts\DBStoreGUI.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Store\Scripts\SlotInfo.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Store\Scripts\WeaponClassIcons.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Animation\EmptyReloadAnim.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Animation\FireAnim.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Animation\NullAnim.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Animation\PlayAnim.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Animation\ReloadAnim.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Animation\ReloadInAnim.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Animation\ReloadOutAnim.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Animation\SecondaryFireAnim.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Animation\SecondaryNullAnim.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Animation\SecondaryReloadAnim.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Animation\SecondaryReloadEmptyAnim.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Animation\WalkAnim.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Boolean\AutoFire.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Boolean\BurstFire.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Boolean\InfiniteAmmo.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Boolean\ProgressiveReload.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Boolean\Scoped.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Float(Multiplier)\AimSpread.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Float(Multiplier)\AimSpreadRate.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Float(Multiplier)\BurstTime.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Float(Multiplier)\Damage.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Float(Multiplier)\FireRate.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Float(Multiplier)\Force.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Float(Multiplier)\KickbackAngle.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Float(Multiplier)\KickbackZ.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Float(Multiplier)\MaxKickback.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Float(Multiplier)\MaxKickbackZ.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Float(Multiplier)\Pitch.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Float(Multiplier)\ReloadInTime.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Float(Multiplier)\ReloadOutTime.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Float(Multiplier)\ReloadTime.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Float(Multiplier)\SpreadDecreaseRate.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Float(Multiplier)\StandardSpread.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Float(Multiplier)\StandardSpreadRate.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Float(Multiplier)\Volume.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Float(Multiplier)\Zoom.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\GlobalUpgrade.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Integer\AmmoPerClip.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Integer\AmmoSet.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Integer\BurstCount.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Integer\MaxClips.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Integer\PenetrateVal.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Integer\ShotCount.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Other\GraphicsObject.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Other\MaterialChange.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Other\Projectile.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Other\SecondaryWeapon.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Upgrade.js" />
+     <Compile Include="Assets\Plugins\DB Upgrades_Store\Upgrades\Components\Vector3\AimPosition.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\Demo Assets\Enemy\General Scripts\EnemyAttack.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\Demo Assets\Enemy\General Scripts\EnemyDrop.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\Demo Assets\Enemy\General Scripts\EnemyMovement.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\Demo Assets\Enemy\General Scripts\EnemyShoot.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\Demo Assets\Enemy\General Scripts\EnemyShootProjectile.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\Demo Assets\Pickups\Ammo\AmmoPickup.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\Demo Assets\Pickups\Health\HealthPickup.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\Demo Assets\Pickups\Money\MoneyPickup.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\Demo Assets\Pickups\Upgrade\UpgradePickup.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\Demo Assets\Scripts\CubeSet.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\Demo Assets\Scripts\FadeLight.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\Demo Assets\Scripts\Spawner.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\Demo Assets\Scripts\Wave.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\Demo Assets\Scripts\Waypoint.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\Demo Assets\Target\target.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\Demo Assets\Weapons\Orbital Laser\ConstantShake.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\Demo Assets\Weapons\Orbital Laser\Laser\Laser.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\Demo Assets\Weapons\Orbital Laser\Laser\OrbitalDesignator.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\Demo Assets\Weapons\Plasma Beam\LaserWeapon.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\Demo Assets\Weapons\PlasmaCannon\ChargeTest.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\Demo Assets\Weapons\Reused Animations\EjectedShell.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\Demo Assets\Weapons\Seeker Launcher\LockOnMissile.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\CommonlyUsed\BulletPenetration.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\CommonlyUsed\CrosshairColor.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\CommonlyUsed\EnemyDamageReceiver.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\CommonlyUsed\Fire.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\CommonlyUsed\FireSelector.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\CommonlyUsed\HitBox.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\CommonlyUsed\Ladder.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\CommonlyUsed\Managers\AmmoManager.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\CommonlyUsed\Managers\EffectsAndPenetrationWizard.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\CommonlyUsed\Managers\EffectsManager.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\CommonlyUsed\SprayScript.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\CommonlyUsed\UseEffects.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Core\Avoidance.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Core\CamSway.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Core\CameraShake.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Core\CharacterMotorDB.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Core\EffectSet.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Core\FPSInputControllerDB.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Core\FPSWalkerDB.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Core\FootStep.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Core\HitDirectional.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Core\LockCursor.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Core\MovementValues.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Core\PlayerHealth.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Core\PlayerSprint.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Core\TimedObjectDestructorDB.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Editable\AmmoDisplay.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Editable\DeathEffects.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Editable\HealthDisplay.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Editable\HighlightFX.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Editable\HighlightWeapon.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Editable\SprintDisplay.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Editable\SprintDisplayPlayer.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Editable\WeaponDisplay.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Input\Axis.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Input\Drag.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Input\InputDB.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Input\InputItem.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Input\JoystickDB.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Input\Key.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Input\MouseButton.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Input\SelectNumKeys.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Input\SelectTouch.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Input\TapToInteract.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Input\Tilt.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Input\TouchButton.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\Input\WeaponSelector.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\ProjectileScripts\DontGoThroughThings.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\ProjectileScripts\Explosion-Other.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\ProjectileScripts\Grenade.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\ProjectileScripts\GrenadeCharged.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\ProjectileScripts\Missile.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\ProjectileScripts\explosion-player.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\WeaponScripts\AimMode.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\WeaponScripts\DrawRay.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\WeaponScripts\FadeLightInstant.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\WeaponScripts\GunChildAnimation.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\WeaponScripts\GunLook.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\WeaponScripts\GunScript.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\WeaponScripts\JumpCrouchEffects.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\WeaponScripts\Lean.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\WeaponScripts\MouseLookDBJS.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\WeaponScripts\MuzzleFlash.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\WeaponScripts\PickupWeapon.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\WeaponScripts\PlayerWeapons.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\WeaponScripts\ReloadSounds.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\WeaponScripts\SelectableWeapon.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\WeaponScripts\SmartCrosshair.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\WeaponScripts\WeaponInfo.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\WeaponScripts\WeaponLocking.js" />
+     <Compile Include="Assets\Plugins\FPS Constructor V1\ScriptsDB\copyright.txt.js" />
+     <Compile Include="Assets\Standard Assets\Camera Scripts\MouseOrbit.js" />
+     <Compile Include="Assets\Standard Assets\Camera Scripts\SmoothFollow.js" />
+     <Compile Include="Assets\Standard Assets\Camera Scripts\SmoothLookAt.js" />
+     <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\CharacterMotor.js" />
+     <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\FPSInputController.js" />
+     <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\PlatformInputController.js" />
+     <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonCamera.js" />
+     <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonController.js" />
+     <Compile Include="Assets\Standard Assets\Scripts\DragRigidbody.js" />
+     <Compile Include="Assets\Standard Assets\Scripts\FPSWalker.js" />
+     <Compile Include="Assets\Standard Assets\Scripts\TimedObjectDestructor.js" />
+     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
+     <None Include="Assets\jPrisonCage\Readme.txt" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
+     <None Include="Assets\NGUI\ReadMe - 3.5.6.txt" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 2.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ExtractSkyboxShader.shader" />
+     <None Include="Assets\Resources\UFire\Guide.txt" />
+     <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ShowAlphaChannel.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo14.txt" />
+     <None Include="Assets\Rocks and Boulders 2\Shaders\shader info.txt" />
+     <None Include="Assets\readme.txt" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowConeTap.shader" />
+     <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\Fx\AdditiveBlend.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SunShaftsComposite.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 1.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurves.shader" />
+     <None Include="Assets\_Map Builder\Particle Effects\ScaleParticles.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 2.shader" />
+     <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\Fx\Cursor.shader" />
+     <None Include="Assets\Wizards Hill\Decals\ShadowProjection.shader" />
+     <None Include="Assets\Wizards Hill\readme.txt" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\HollywoodFlareBlur.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\NFAA.shader" />
+     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Masked Colored.shader" />
+     <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\Fx\ParticleAdditive.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 3.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\VignetteShader.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
+     <None Include="Assets\Wizards Hill\Decals\SelectionProjection.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\MotionBlur.shader" />
+     <None Include="Assets\Top Down\tools scripts\TriPlanarTerrain\Shaders\triPlanarTerrain.shader" />
+     <None Include="Assets\PieMenu\readme.txt" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowCompose.shader" />
+     <None Include="Assets\Resources\Dungeon Construction Kit\Prefabs\ReadMe.txt" />
+     <None Include="Assets\Resources\fantasy horde_goblin\shader\fantasy horde-goblin_Compressed MaskedShader2sided.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\MinMaxReduction.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\SSAA.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\RadialBlur.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
+     <None Include="Assets\Scripts\Particle Alpha Blend goodfog.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ContrastComposite.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAAPreset3.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\FisheyeShader.shader" />
+     <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\Fx\Rain.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Apply.shader" />
+     <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\Fx\Additive.shader" />
+     <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\BackgroundAndCharacters\Fallback.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\frag_ao.cginc" />
+     <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\BackgroundAndCharacters\RealtimeReflectionReplacement.shader" />
+     <None Include="Assets\Resources\ats Package\ats vertexLitShader Package\Shader\ats VertexLit.shader" />
+     <None Include="Assets\MobileDungeonPack\Arteria3dDungeonPackUnity\Doors\Doors\DungeonDoorA Animations.txt" />
+     <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\BackgroundAndCharacters\RealtimeReflectionInWaterFlow.shader" />
+     <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\BackgroundAndCharacters\AngryInclude.cginc" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 1.shader" />
+     <None Include="Assets\Top-Down Dungeons Mobile\!Readme.txt" />
+     <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\Fx\Multiply.shader" />
+     <None Include="Assets\Resources\Adventurer\Readme.txt" />
+     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SkyboxToRGBADepth.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\addalphahack.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 3.shader" />
+     <None Include="Assets\Rocks and Boulders 2\readme.txt" />
+     <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\Fx\HeightFogBeforeTransparent.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
+     <None Include="Assets\Top Down\tools scripts\TriPlanarTerrain\Shaders\triPlanarTerrainAddPass.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 2.shader" />
+     <None Include="Assets\MobileDungeonPack\Arteria3dDungeonPackUnity\Props\Chest\ChestAnimations.txt" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfField34.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\TiltShift.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 3.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
+     <None Include="Assets\Resources\Allsky\allsky_readme.txt" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SSAOShader.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ConvertDepth.shader" />
+     <None Include="Assets\Top-Down Dungeons Mobile\Scripts\MobileBloom.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurvesSimple.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderYUV.shader" />
+     <None Include="Assets\Resources\fantasy horde_vilagers\shader\Compressed MaskedShader2sided 5-4 cut out.shader" />
+     <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\Fx\Blend.shader" />
+     <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\BackgroundAndCharacters\CharacterSelfIlluminationReflective.shader" />
+     <None Include="Assets\_Map Builder\Particle Effects\readme.txt" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowEffectDownsample.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\CreaseApply.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 1.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 1.shader" />
+     <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\BackgroundAndCharacters\EnemySelfIlluminationReflective.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ChromaticAberrationShader.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
+     <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\Fx\ParticleBlend.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlobalFog.shader" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
+     <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\BackgroundAndCharacters\AlphaCutoutCheapFallback.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Luminance.shader" />
+     <None Include="Assets\Resources\fantasy horde_Dwarfs\Shader\Compressed MaskedShader2sided 5-4 cut out.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
+     <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\BackgroundAndCharacters\SuperSimpleSelfIllumination.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionSelective.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\Bokeh34.shader" />
+     <None Include="Assets\Shaders\AdditiveProjector.shader" />
+     <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\BackgroundAndCharacters\ReflectiveBackgroundPlanar.shader" />
+     <None Include="Assets\Standard Assets\DefaultResources\Normal-Diffuse.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\CameraMotionBlurDX11.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+     <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\Fx\ParticleAdditiveBlend.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text.shader" />
+     <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\BackgroundAndCharacters\PlanarRealtimeReflection.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\BlurEffectConeTaps.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\CameraMotionBlur.shader" />
+     <None Include="Assets\Pro Standard Assets\Water\Sources\FX-Water.shader" />
+     <None Include="Assets\Water\FX-IslandWaterFull.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\DLAA.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrainDX11.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
+     <None Include="Assets\Resources\Cultist Altar\Materials\BumpedTransGloss\BumpedTransGloss.shader" />
+     <None Include="Assets\seaFoamCoast\foamShader.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
+     <None Include="Assets\Resources\DungeonLever\misc\Dungeon_Lever_Readme.txt" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableBlur.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\MotionBlurClear.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionEffect.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GrayscaleEffect.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SepiaToneEffect.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\TwirlEffect.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VortexEffect.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Adaptation.shader" />
+     <None Include="Assets\Resources\FlamingSkull\DoubleSidedTransparentCutoutBumpedSpecular.shader" />
+     <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\Fx\InterlacePatternBlend.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrain.shader" />
+     <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\Fx\RainSplash.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\HollywoodFlareStretch.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VignettingShader.shader" />
+     <None Include="Assets\Rocks and Boulders 2\Shaders\Blend SM3.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Tonemapper.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Additive Colored.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAA2.shader" />
+     <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\Fx\InterlacePatternAdditive.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrection3DLut.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+     <None Include="Assets\NGUI\Examples\Shaders\Refractive.shader" />
+     <None Include="Assets\Top Down\tools scripts\desaturate\Image Based\DesaturateEffect.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\EdgeDetectNormals.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\PrepareSunShaftsBlur.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\Blend.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\BlendModesOverlay.shader" />
+     <None Include="Assets\Resources\Dungeon Construction Kit\Scenes\ReadMe.txt" />
+     <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\Fx\ScreenRefract.shader" />
+     <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SimpleClear.shader" />
+     <None Include="Assets\MobileDungeonPack\Arteria3dDungeonPackUnity\Doors\Doors\CorridorDoor Animations.txt" />
+     <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\BackgroundAndCharacters\ReflectiveBackgroundSelfIllumination.shader" />
+     <None Include="Assets\Water\FX-IslandWaterSimple.shader" />
+     <None Include="Assets\Wizards Hill\Crystals\Materials\diamond shader.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAA3Console.shader" />
+     <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
+     <None Include="Assets\Rocks and Boulders 2\Shaders\Blend SM2.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\EdgeDetectX.shader" />
+     <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\BackgroundAndCharacters\ReflectiveBackgroundArbitrary.shader" />
+     <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
+     <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\Fx\LaserScope.shader" />
+     <None Include="Assets\Top Down\!Readme.txt" />
+     <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\Fx\ParticleMultiply.shader" />
+     <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAAPreset2.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendForBloom.shader" />
+ <Reference Include="blindGUI">
+ <HintPath>Assets\Plugins\blindGUI.dll</HintPath>
+ </Reference>
+ <Reference Include="CloudSystemFree.Runtime">
+ <HintPath>Assets\Plugins\Cloud System\CloudSystemFree.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="uSequencerRuntime">
+ <HintPath>Assets\uSequencer\Sequencer\uSequencerRuntime.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
