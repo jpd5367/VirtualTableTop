@@ -1,0 +1,43 @@
+# Wavefront MTL file
+# Creator: Ultimate Unwrap3D Pro v3.19
+# URL: http://www.unwrap3d.com
+# Time: Tue Nov 17 14:12:44 2009
+# num_materials: 4
+
+newmtl texturesheet_B
+Ka 0.000000 0.000000 0.000000
+Kd 0.820000 0.830000 0.870000
+Ks 0.820000 0.830000 0.870000
+d 1.000000
+illum 2
+Ns 1.000000
+map_Kd texturesheet_B.jpg
+
+newmtl terrain
+Ka 0.000000 0.000000 0.000000
+Kd 0.820000 0.830000 0.870000
+Ks 0.820000 0.830000 0.870000
+d 1.000000
+illum 2
+Ns 1.000000
+map_Kd terrain.jpg
+
+newmtl texturesheet_1
+Ka 0.000000 0.000000 0.000000
+Kd 0.820000 0.830000 0.870000
+Ks 0.820000 0.830000 0.870000
+d 1.000000
+illum 2
+Ns 1.000000
+map_Kd texturesheet_1.jpg
+
+newmtl cobble
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+d 1.000000
+illum 2
+Ns 1.000000
+map_Kd cobble.jpg
+
+# num_materials: 4

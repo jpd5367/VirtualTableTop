@@ -1,0 +1,36 @@
+newmtl def_surf_mat
+Kd 0.820000 0.830000 0.870000
+Ks 0.150000 0.150000 0.150000
+Ns 100.000000
+d 1.000000
+illum 2
+map_Kd c:\users\public\documents\unity projects\island demo\assets\mobiledevice_medievalpack\med scene4.png
+newmtl texturesheet_B
+Kd 0.820000 0.830000 0.870000
+Ks 0.820000 0.830000 0.870000
+Ns 1.000000
+d 1.000000
+illum 2
+map_Kd c:\users\public\documents\unity projects\island demo\assets\mobiledevice_medievalpack\med scene0.png
+newmtl terrain
+Kd 0.820000 0.830000 0.870000
+Ks 0.820000 0.830000 0.870000
+Ns 1.000000
+d 1.000000
+illum 2
+map_Kd c:\users\public\documents\unity projects\island demo\assets\mobiledevice_medievalpack\med scene1.png
+newmtl texturesheet_1
+Kd 0.820000 0.830000 0.870000
+Ks 0.820000 0.830000 0.870000
+Ns 1.000000
+d 1.000000
+illum 2
+map_Kd c:\users\public\documents\unity projects\island demo\assets\mobiledevice_medievalpack\med scene2.png
+newmtl material30
+Ka 1.000000 1.000000 1.000000
+Kd 0.501961 1.000000 0.964706
+Ks 1.000000 1.000000 1.000000
+Ns 100.000000
+d 1.000000
+illum 2
+map_Kd c:\users\public\documents\unity projects\island demo\assets\mobiledevice_medievalpack\med scene2.png
