@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{0A420681-97D3-622B-7F03-F830BE5671C1}</ProjectGuid>
+	<ProjectGuid>{92CC3E3D-0A98-AF48-474C-873BBA4C118B}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -240,12 +240,6 @@
  <Reference Include="CloudSystemFree.Editor">
  <HintPath>Assets\Plugins\Editor\Cloud System\CloudSystemFree.Editor.dll</HintPath>
  </Reference>
- <Reference Include="uSequencerRuntime">
- <HintPath>Assets\uSequencer\Sequencer\uSequencerRuntime.dll</HintPath>
- </Reference>
- <Reference Include="uSequencerEditor">
- <HintPath>Assets\uSequencer\Sequencer\Editor\uSequencerEditor.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:\Program Files (x86)\Unity431\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
  </Reference>
@@ -267,7 +261,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
-      <Project>{A6E2DBDA-5CB3-8996-FA2C-2495872F1DD0}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+      <Project>{B50B627B-BA03-63F7-E68A-6FD87DDE7E13}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

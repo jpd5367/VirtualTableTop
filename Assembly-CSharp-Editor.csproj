@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{A60E0D3B-CAAF-E6F0-353E-B2196EF47D5C}</ProjectGuid>
+	<ProjectGuid>{658A7FB0-1E86-1B4F-0B5A-90E4B4C3E663}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -345,12 +345,6 @@
  <Reference Include="CloudSystemFree.Editor">
  <HintPath>Assets\Plugins\Editor\Cloud System\CloudSystemFree.Editor.dll</HintPath>
  </Reference>
- <Reference Include="uSequencerRuntime">
- <HintPath>Assets\uSequencer\Sequencer\uSequencerRuntime.dll</HintPath>
- </Reference>
- <Reference Include="uSequencerEditor">
- <HintPath>Assets\uSequencer\Sequencer\Editor\uSequencerEditor.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:\Program Files (x86)\Unity431\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
  </Reference>
@@ -372,19 +366,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{A6E2DBDA-5CB3-8996-FA2C-2495872F1DD0}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{B50B627B-BA03-63F7-E68A-6FD87DDE7E13}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{611280E5-DF4C-9057-EE06-F712F4D83333}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+      <Project>{11952C32-1A47-0E3D-E87A-37AFE54C4A95}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{1D22AADD-DCB9-1E0C-8BFF-2493AB0FDB98}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{EA2496B3-4F1D-1B34-4AB2-E229064622FF}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-Boo.booproj">
-      <Project>{F3DE7FC7-D217-A332-641E-CAA484D63018}</Project>      <Name>Assembly-Boo</Name>    </ProjectReference>
+      <Project>{B1B4D476-D302-0B70-A110-87DADB3754D0}</Project>      <Name>Assembly-Boo</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript.unityproj">
-      <Project>{524F23EE-34E7-6D0B-660E-4E726A049E47}</Project>      <Name>Assembly-UnityScript</Name>    </ProjectReference>
+      <Project>{FDC07FEE-19C6-756D-09E8-D0DA1CC064E3}</Project>      <Name>Assembly-UnityScript</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
-      <Project>{0A420681-97D3-622B-7F03-F830BE5671C1}</Project>      <Name>Assembly-CSharp-Editor-firstpass</Name>    </ProjectReference>
+      <Project>{92CC3E3D-0A98-AF48-474C-873BBA4C118B}</Project>      <Name>Assembly-CSharp-Editor-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript-Editor-firstpass.unityproj">
-      <Project>{6C45A4A8-64B8-19C7-1C13-D562EA4B3A0A}</Project>      <Name>Assembly-UnityScript-Editor-firstpass</Name>    </ProjectReference>
+      <Project>{6EA620A0-440E-EB26-5247-2EFE02EFD842}</Project>      <Name>Assembly-UnityScript-Editor-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

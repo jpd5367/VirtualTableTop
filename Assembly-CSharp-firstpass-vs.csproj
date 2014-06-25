@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{A6E2DBDA-5CB3-8996-FA2C-2495872F1DD0}</ProjectGuid>
+	<ProjectGuid>{B50B627B-BA03-63F7-E68A-6FD87DDE7E13}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -262,9 +262,6 @@
  </Reference>
  <Reference Include="CloudSystemFree.Runtime">
  <HintPath>Assets\Plugins\Cloud System\CloudSystemFree.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="uSequencerRuntime">
- <HintPath>Assets\uSequencer\Sequencer\uSequencerRuntime.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

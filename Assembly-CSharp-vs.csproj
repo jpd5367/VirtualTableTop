@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{1D22AADD-DCB9-1E0C-8BFF-2493AB0FDB98}</ProjectGuid>
+	<ProjectGuid>{EA2496B3-4F1D-1B34-4AB2-E229064622FF}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -58,7 +58,6 @@
      <Compile Include="Assets\Equipment\Wearable\TorsoItem.cs" />
      <Compile Include="Assets\Equipment\Wearable\WaistItem.cs" />
      <Compile Include="Assets\FT_MagicEffect_vol3\Scene\Script\Button.cs" />
-     <Compile Include="Assets\GUI Scripts\GUIFunctions.cs" />
      <Compile Include="Assets\IGSoft_Resources\Scripts\NcEffect\Common\EffectScriptSample.cs" />
      <Compile Include="Assets\IGSoft_Resources\Scripts\NcEffect\Common\NcDetachObject.cs" />
      <Compile Include="Assets\IGSoft_Resources\Scripts\NcEffect\Common\NcDisableDelayActive.cs" />
@@ -655,13 +654,10 @@
  <Reference Include="CloudSystemFree.Runtime">
  <HintPath>Assets\Plugins\Cloud System\CloudSystemFree.Runtime.dll</HintPath>
  </Reference>
- <Reference Include="uSequencerRuntime">
- <HintPath>Assets\uSequencer\Sequencer\uSequencerRuntime.dll</HintPath>
- </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
-      <Project>{A6E2DBDA-5CB3-8996-FA2C-2495872F1DD0}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+      <Project>{B50B627B-BA03-63F7-E68A-6FD87DDE7E13}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
