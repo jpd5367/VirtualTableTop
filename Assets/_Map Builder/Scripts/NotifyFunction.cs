@@ -13,4 +13,9 @@ public class NotifyFunction : MonoBehaviour {
 		GameObject.Find("Main Camera").GetComponent<SelectItem>().CloseMoveGUI();
 		//DestroyObject(gameObject.transform.parent.gameObject);
 	}
+
+	public void NotifyCloseRotateGUI(){
+		GameObject.Find("Main Camera").GetComponent<SelectItem>().CloseRotateGUI();
+		//DestroyObject(gameObject.transform.parent.gameObject);
+	}
 }

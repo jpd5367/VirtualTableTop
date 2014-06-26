@@ -1,13 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Map Builder\Scripts\Item Manipulation\SelectItem.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\GUI Scripts\GUIFunctions.cs">
     <Files>
-      <File FileName="Assets\_Map Builder\Scripts\Item Manipulation\ScaleController.cs" Line="1" Column="1" />
-      <File FileName="Assets\_Map Builder\Scripts\Item Manipulation\SelectItem.cs" Line="132" Column="3" />
-      <File FileName="Assets\_Map Builder\Scripts\Item Manipulation\MoveX.cs" Line="18" Column="17" />
-      <File FileName="Assets\_Map Builder\Scripts\Item Manipulation\MoveY.cs" Line="11" Column="2" />
-      <File FileName="Assets\_Map Builder\Scripts\Item Manipulation\MoveZ.cs" Line="24" Column="36" />
-      <File FileName="Assets\_Map Builder\Scripts\NotifyFunction.cs" Line="14" Column="59" />
+      <File FileName="Assets\_Map Builder\Scripts\Item Manipulation\SelectItem.cs" Line="144" Column="52" />
+      <File FileName="Assets\_Map Builder\Scripts\Item Manipulation\HoverPassName.cs" Line="17" Column="3" />
+      <File FileName="Assets\_Map Builder\Scripts\NotifyFunction.cs" Line="22" Column="1" />
+      <File FileName="Assets\GUI Scripts\GUIFunctions.cs" Line="60" Column="45" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

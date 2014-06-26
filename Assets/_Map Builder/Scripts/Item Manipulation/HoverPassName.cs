@@ -11,6 +11,9 @@ public class HoverPassName: MonoBehaviour {
 		if(gameObject.name == "Move Icon"){ 
 			GameObject.Find ("Main Camera").GetComponent<SelectItem>().SetModSelection(ModItemSelection.Move);
 		}
+		if(gameObject.name == "Rotate Icon"){ 
+			GameObject.Find ("Main Camera").GetComponent<SelectItem>().SetModSelection(ModItemSelection.Rotate);
+		}
 	}
 
 

@@ -4,7 +4,8 @@ using System.Collections;
 public enum ModItemSelection{
 	None,
 	Scale,
-	Move
+	Move,
+	Rotate
 }
 
 public class SelectItem : MonoBehaviour {
@@ -15,8 +16,10 @@ public class SelectItem : MonoBehaviour {
 	public GameObject menu;
 	public GameObject ScaleGUI;
 	public GameObject MoveGUI;
+	public GameObject RotateGUI;
 	public GameObject Scaley;
 	public GameObject Movey;
+	public GameObject Rotatey;
 
 	public Vector3 selectionPos;
 
@@ -27,6 +30,7 @@ public class SelectItem : MonoBehaviour {
 	public bool menuOpen;
 	public bool ScaleGUISelected;
 	public bool MoveGUISelected;
+	public bool RotateGUISelected;
 
 
 	public ModItemSelection modSelected;
@@ -35,6 +39,7 @@ public class SelectItem : MonoBehaviour {
 		modSelected = ModItemSelection.None;
 		ScaleGUISelected = false;
 		MoveGUISelected  = false;
+		RotateGUISelected  = false;
 	}
 	
 	// Update is called once per frame
@@ -130,6 +135,16 @@ public class SelectItem : MonoBehaviour {
 			GameObject.Find ("Move Z").GetComponent<MoveZ>().target = lastSelection;
 		}
 
+		if(optionSelected && modSelected == ModItemSelection.Rotate && RotateGUISelected != true){// display scale adjustment GUI
+			
+			Rotatey = GameObject.Instantiate(RotateGUI) as GameObject;
+			RotateGUISelected = true;
+			GameObject.Find ("Rotate X").GetComponent<RotateX>().target = lastSelection;
+			GameObject.Find ("Rotate Y").GetComponent<RotateY>().target = lastSelection;
+			GameObject.Find ("Rotate Z").GetComponent<RotateZ>().target = lastSelection;
+		}
+
+
 	}
 
 	public void CloseScaleGUI(){
@@ -146,6 +161,14 @@ public class SelectItem : MonoBehaviour {
 		DestroyObject(Movey);
 		Movey = null;
 		MoveGUISelected = false;
+	}
+
+	public void CloseRotateGUI(){
+		Debug.Log ("Closing Rotate GUI");
+		optionSelected = false;
+		DestroyObject(Rotatey);
+		Rotatey = null;
+		RotateGUISelected = false;
 	}
 
 }

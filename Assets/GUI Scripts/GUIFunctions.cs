@@ -7,7 +7,7 @@ public class GUIFunctions : MonoBehaviour {
 
 	public bool mainMenuEnabled;
 	public bool tileSetsEnabled;
-	public bool animalListEnabled;
+	public bool monsterListEnabled;
 
 
 
@@ -32,7 +32,7 @@ public class GUIFunctions : MonoBehaviour {
 		
 		CloseMainMenu();
 		EnableBack();
-		tileSetsEnabled = true;
+		monsterListEnabled = true;
 	}
 
 	public void CloseMainMenu(){
@@ -68,7 +68,7 @@ public class GUIFunctions : MonoBehaviour {
 		if(tileSetsEnabled){
 			Destroy(GameObject.Find("StoneyTiles(Clone)"));
 		}
-		if(animalListEnabled){
+		if(monsterListEnabled){
 			Destroy(GameObject.Find("Animal List(Clone)"));
 		}
 	}

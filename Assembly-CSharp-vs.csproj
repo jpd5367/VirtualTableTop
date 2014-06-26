@@ -287,6 +287,9 @@
      <Compile Include="Assets\QuickStart\QuickStartMainScriptCS.cs" />
      <Compile Include="Assets\Resources\UFire\scripts\gui.cs" />
      <Compile Include="Assets\Rocks and Boulders 2\Shaders\RotateGameObject.cs" />
+     <Compile Include="Assets\RotateX.cs" />
+     <Compile Include="Assets\RotateY.cs" />
+     <Compile Include="Assets\RotateZ.cs" />
      <Compile Include="Assets\Samples\ClockArrowController.cs" />
      <Compile Include="Assets\Samples\ExitButtonScript.cs" />
      <Compile Include="Assets\Samples\LoadIndicatorScript.cs" />
