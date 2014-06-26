@@ -16,6 +16,7 @@ public class SelectItem : MonoBehaviour {
 	public GameObject ScaleGUI;
 	public GameObject MoveGUI;
 	public GameObject Scaley;
+	public GameObject Movey;
 
 	public Vector3 selectionPos;
 
@@ -43,14 +44,16 @@ public class SelectItem : MonoBehaviour {
 
 		if(Input.GetMouseButtonDown(0)){
 			Physics.Raycast(ray,out hit, Mathf.Infinity);
-			UISprite[] components;
-			components = hit.collider.gameObject.GetComponents<UISprite>();
+			if(hit.collider != null){
+				UISprite[] components = hit.collider.gameObject.GetComponents<UISprite>();
+			
 
-			if(components.Length == 0){
-				currentSelection = hit.collider.gameObject;
-				lastSelection = currentSelection;
-				selectionPos = currentSelection.transform.position;
-				itemSelected = true;
+				if(components.Length == 0){
+					currentSelection = hit.collider.gameObject;
+					lastSelection = currentSelection;
+					selectionPos = currentSelection.transform.position;
+					itemSelected = true;
+				}
 			}
 		}
 		else if(Input.GetMouseButton(0)&&itemSelected == true){
@@ -112,14 +115,19 @@ public class SelectItem : MonoBehaviour {
 
 	public void OpenSelectionGUI(){
 		if(optionSelected && modSelected == ModItemSelection.Scale && ScaleGUISelected != true){// display scale adjustment GUI
-			Debug.Log ("Scale Gui");
+
 			Scaley = GameObject.Instantiate(ScaleGUI) as GameObject;
 			ScaleGUISelected = true;
 			GameObject.Find ("Scale Controller").GetComponent<ScaleController>().target = lastSelection;
 		}
 
-		if(optionSelected && modSelected == ModItemSelection.Move){// display position adjustment GUI
-			Debug.Log ("Move Gui");
+		if(optionSelected && modSelected == ModItemSelection.Move && MoveGUISelected != true){// display scale adjustment GUI
+
+			Movey = GameObject.Instantiate(MoveGUI) as GameObject;
+			MoveGUISelected = true;
+			GameObject.Find ("Move X").GetComponent<MoveX>().target = lastSelection;
+			GameObject.Find ("Move Y").GetComponent<MoveY>().target = lastSelection;
+			GameObject.Find ("Move Z").GetComponent<MoveZ>().target = lastSelection;
 		}
 
 	}
@@ -132,5 +140,12 @@ public class SelectItem : MonoBehaviour {
 		ScaleGUISelected = false;
 	}
 
+	public void CloseMoveGUI(){
+		Debug.Log ("Closing Move GUI");
+		optionSelected = false;
+		DestroyObject(Movey);
+		Movey = null;
+		MoveGUISelected = false;
+	}
 
 }

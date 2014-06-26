@@ -8,4 +8,9 @@ public class NotifyFunction : MonoBehaviour {
 		GameObject.Find("Main Camera").GetComponent<SelectItem>().CloseScaleGUI();
 		//DestroyObject(gameObject.transform.parent.gameObject);
 	}
+
+	public void NotifyCloseMoveGUI(){
+		GameObject.Find("Main Camera").GetComponent<SelectItem>().CloseMoveGUI();
+		//DestroyObject(gameObject.transform.parent.gameObject);
+	}
 }
