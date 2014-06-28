@@ -42,7 +42,7 @@ public class DragDropTile : UIDragDropItem
 					trans.rotation = Quaternion.LookRotation(UICamera.lastHit.normal) * Quaternion.Euler(90f, 0f, 0f);
 				}
 				if(prefab.name == "Center"){
-
+					//Tile to left
 					if(!MapBuilder.tiles.ContainsKey((trans.position.x-5).ToString()+","+trans.position.y.ToString()+","+trans.position.z.ToString())){
 						temp = Instantiate(newSpot,new Vector3(trans.position.x -5, trans.position.y, trans.position.z), prefab.transform.rotation)as GameObject; 
 						temp.name = (trans.position.x-5).ToString()+","+trans.position.y.ToString()+","+trans.position.z.ToString();
@@ -50,7 +50,7 @@ public class DragDropTile : UIDragDropItem
 						MapBuilder.tiles.Add((trans.position.x-5).ToString()+","+trans.position.y.ToString()+","+trans.position.z.ToString(), temp);
 				
 					}
-
+					// tile to bottom
 					if(!MapBuilder.tiles.ContainsKey((trans.position.x).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z-5).ToString())){
 						temp = Instantiate(newSpot,new Vector3(trans.position.x, trans.position.y, trans.position.z-5), prefab.transform.rotation)as GameObject; 
 						temp.name = (trans.position.x).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z-5).ToString();
@@ -58,6 +58,7 @@ public class DragDropTile : UIDragDropItem
 						MapBuilder.tiles.Add((trans.position.x).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z-5).ToString(), temp);
 					
 					}
+					//tile to right
 					if(!MapBuilder.tiles.ContainsKey((trans.position.x+5).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z).ToString())){
 						temp = Instantiate(newSpot,new Vector3(trans.position.x +5, trans.position.y, trans.position.z), prefab.transform.rotation)as GameObject; 
 						temp.name = (trans.position.x+5).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z).ToString();
@@ -65,6 +66,7 @@ public class DragDropTile : UIDragDropItem
 						MapBuilder.tiles.Add((trans.position.x+5).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z).ToString(), temp);
 					
 					}
+					//tile to top
 					if(!MapBuilder.tiles.ContainsKey((trans.position.x).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z+5).ToString())){
 						temp = Instantiate(newSpot,new Vector3(trans.position.x, trans.position.y, trans.position.z+5), prefab.transform.rotation)as GameObject; 
 						temp.name = (trans.position.x).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z+5).ToString();
@@ -230,6 +232,108 @@ public class DragDropTile : UIDragDropItem
 						MapBuilder.tiles.Add((trans.position.x+5).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z).ToString(), temp);
 						
 					}
+					if(!MapBuilder.tiles.ContainsKey((trans.position.x).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z+5).ToString())){
+						temp = Instantiate(newSpot,new Vector3(trans.position.x, trans.position.y, trans.position.z+5), prefab.transform.rotation)as GameObject; 
+						temp.name = (trans.position.x).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z+5).ToString();
+						temp.transform.parent = GameObject.Find("MapGrid").transform;
+						MapBuilder.tiles.Add((trans.position.x).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z+5).ToString(), temp);
+						
+					}
+				}
+				else if(prefab.name == "Bottom Hall End Tile"){
+
+					if(!MapBuilder.tiles.ContainsKey((trans.position.x).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z+5).ToString())){
+						temp = Instantiate(newSpot,new Vector3(trans.position.x, trans.position.y, trans.position.z+5), prefab.transform.rotation)as GameObject; 
+						temp.name = (trans.position.x).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z+5).ToString();
+						temp.transform.parent = GameObject.Find("MapGrid").transform;
+						MapBuilder.tiles.Add((trans.position.x).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z+5).ToString(), temp);
+						
+					}
+				}
+				if(prefab.name == "Bottom Right Angle Tile"){
+					//Tile to left
+					if(!MapBuilder.tiles.ContainsKey((trans.position.x-5).ToString()+","+trans.position.y.ToString()+","+trans.position.z.ToString())){
+						temp = Instantiate(newSpot,new Vector3(trans.position.x -5, trans.position.y, trans.position.z), prefab.transform.rotation)as GameObject; 
+						temp.name = (trans.position.x-5).ToString()+","+trans.position.y.ToString()+","+trans.position.z.ToString();
+						temp.transform.parent = GameObject.Find("MapGrid").transform;
+						MapBuilder.tiles.Add((trans.position.x-5).ToString()+","+trans.position.y.ToString()+","+trans.position.z.ToString(), temp);
+						
+					}
+
+					//tile to top
+					if(!MapBuilder.tiles.ContainsKey((trans.position.x).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z+5).ToString())){
+						temp = Instantiate(newSpot,new Vector3(trans.position.x, trans.position.y, trans.position.z+5), prefab.transform.rotation)as GameObject; 
+						temp.name = (trans.position.x).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z+5).ToString();
+						temp.transform.parent = GameObject.Find("MapGrid").transform;
+						MapBuilder.tiles.Add((trans.position.x).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z+5).ToString(), temp);
+						
+					}
+				}
+				if(prefab.name == "Horizontal Hall"){
+					//Tile to left
+					if(!MapBuilder.tiles.ContainsKey((trans.position.x-5).ToString()+","+trans.position.y.ToString()+","+trans.position.z.ToString())){
+						temp = Instantiate(newSpot,new Vector3(trans.position.x -5, trans.position.y, trans.position.z), prefab.transform.rotation)as GameObject; 
+						temp.name = (trans.position.x-5).ToString()+","+trans.position.y.ToString()+","+trans.position.z.ToString();
+						temp.transform.parent = GameObject.Find("MapGrid").transform;
+						MapBuilder.tiles.Add((trans.position.x-5).ToString()+","+trans.position.y.ToString()+","+trans.position.z.ToString(), temp);
+						
+					}
+
+					//tile to right
+					if(!MapBuilder.tiles.ContainsKey((trans.position.x+5).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z).ToString())){
+						temp = Instantiate(newSpot,new Vector3(trans.position.x +5, trans.position.y, trans.position.z), prefab.transform.rotation)as GameObject; 
+						temp.name = (trans.position.x+5).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z).ToString();
+						temp.transform.parent = GameObject.Find("MapGrid").transform;
+						MapBuilder.tiles.Add((trans.position.x+5).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z).ToString(), temp);
+						
+					}
+
+				}
+				if(prefab.name == "Top Hall End Tile"){
+
+					// tile to bottom
+					if(!MapBuilder.tiles.ContainsKey((trans.position.x).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z-5).ToString())){
+						temp = Instantiate(newSpot,new Vector3(trans.position.x, trans.position.y, trans.position.z-5), prefab.transform.rotation)as GameObject; 
+						temp.name = (trans.position.x).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z-5).ToString();
+						temp.transform.parent = GameObject.Find("MapGrid").transform;
+						MapBuilder.tiles.Add((trans.position.x).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z-5).ToString(), temp);
+						
+					}
+				}
+				if(prefab.name == "Right Hall End Tile"){
+					//Tile to left
+					if(!MapBuilder.tiles.ContainsKey((trans.position.x-5).ToString()+","+trans.position.y.ToString()+","+trans.position.z.ToString())){
+						temp = Instantiate(newSpot,new Vector3(trans.position.x -5, trans.position.y, trans.position.z), prefab.transform.rotation)as GameObject; 
+						temp.name = (trans.position.x-5).ToString()+","+trans.position.y.ToString()+","+trans.position.z.ToString();
+						temp.transform.parent = GameObject.Find("MapGrid").transform;
+						MapBuilder.tiles.Add((trans.position.x-5).ToString()+","+trans.position.y.ToString()+","+trans.position.z.ToString(), temp);
+						
+					}
+				}
+				if(prefab.name == "Left Hall End Tile"){
+
+					//tile to right
+					if(!MapBuilder.tiles.ContainsKey((trans.position.x+5).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z).ToString())){
+						temp = Instantiate(newSpot,new Vector3(trans.position.x +5, trans.position.y, trans.position.z), prefab.transform.rotation)as GameObject; 
+						temp.name = (trans.position.x+5).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z).ToString();
+						temp.transform.parent = GameObject.Find("MapGrid").transform;
+						MapBuilder.tiles.Add((trans.position.x+5).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z).ToString(), temp);
+						
+					}
+
+				}
+				if(prefab.name == "Vertical Hall"){
+
+					// tile to bottom
+					if(!MapBuilder.tiles.ContainsKey((trans.position.x).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z-5).ToString())){
+						temp = Instantiate(newSpot,new Vector3(trans.position.x, trans.position.y, trans.position.z-5), prefab.transform.rotation)as GameObject; 
+						temp.name = (trans.position.x).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z-5).ToString();
+						temp.transform.parent = GameObject.Find("MapGrid").transform;
+						MapBuilder.tiles.Add((trans.position.x).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z-5).ToString(), temp);
+						
+					}
+
+					//tile to top
 					if(!MapBuilder.tiles.ContainsKey((trans.position.x).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z+5).ToString())){
 						temp = Instantiate(newSpot,new Vector3(trans.position.x, trans.position.y, trans.position.z+5), prefab.transform.rotation)as GameObject; 
 						temp.name = (trans.position.x).ToString()+","+(trans.position.y).ToString()+","+(trans.position.z+5).ToString();

@@ -83,7 +83,7 @@
      <Compile Include="Assets\Standard Assets\Water 1\Sources\WaterSimple.cs" />
      <Compile Include="Assets\Standard Assets\Water\Sources\WaterWaveScroll.cs" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
-     <None Include="Assets\jPrisonCage\Readme.txt" />
+     <None Include="Assets\Resources\jPrisonCage\Readme.txt" />
      <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\NGUI\ReadMe - 3.5.6.txt" />
      <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
@@ -95,7 +95,7 @@
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
      <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ShowAlphaChannel.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo14.txt" />
-     <None Include="Assets\Rocks and Boulders 2\Shaders\shader info.txt" />
+     <None Include="Assets\Resources\Rocks and Boulders 2\Shaders\shader info.txt" />
      <None Include="Assets\readme.txt" />
      <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowConeTap.shader" />
      <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\Fx\AdditiveBlend.shader" />
@@ -118,7 +118,6 @@
      <None Include="Assets\Wizards Hill\Decals\SelectionProjection.shader" />
      <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\MotionBlur.shader" />
      <None Include="Assets\Top Down\tools scripts\TriPlanarTerrain\Shaders\triPlanarTerrain.shader" />
-     <None Include="Assets\PieMenu\readme.txt" />
      <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowCompose.shader" />
      <None Include="Assets\Resources\Dungeon Construction Kit\Prefabs\ReadMe.txt" />
      <None Include="Assets\Resources\fantasy horde_goblin\shader\fantasy horde-goblin_Compressed MaskedShader2sided.shader" />
@@ -149,7 +148,7 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SkyboxToRGBADepth.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\addalphahack.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 3.shader" />
-     <None Include="Assets\Rocks and Boulders 2\readme.txt" />
+     <None Include="Assets\Resources\Rocks and Boulders 2\readme.txt" />
      <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\Fx\HeightFogBeforeTransparent.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
      <None Include="Assets\Top Down\tools scripts\TriPlanarTerrain\Shaders\triPlanarTerrainAddPass.shader" />
@@ -204,7 +203,6 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrainDX11.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
      <None Include="Assets\Resources\Cultist Altar\Materials\BumpedTransGloss\BumpedTransGloss.shader" />
-     <None Include="Assets\seaFoamCoast\foamShader.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
      <None Include="Assets\Resources\DungeonLever\misc\Dungeon_Lever_Readme.txt" />
      <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableBlur.shader" />
@@ -221,7 +219,7 @@
      <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\Fx\RainSplash.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\HollywoodFlareStretch.shader" />
      <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VignettingShader.shader" />
-     <None Include="Assets\Rocks and Boulders 2\Shaders\Blend SM3.shader" />
+     <None Include="Assets\Resources\Rocks and Boulders 2\Shaders\Blend SM3.shader" />
      <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Tonemapper.shader" />
      <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Additive Colored.shader" />
@@ -247,7 +245,7 @@
      <None Include="Assets\Wizards Hill\Crystals\Materials\diamond shader.shader" />
      <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAA3Console.shader" />
      <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
-     <None Include="Assets\Rocks and Boulders 2\Shaders\Blend SM2.shader" />
+     <None Include="Assets\Resources\Rocks and Boulders 2\Shaders\Blend SM2.shader" />
      <None Include="Assets\Top Down\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\EdgeDetectX.shader" />
      <None Include="Assets\Top-Down Dungeons Mobile\_source\Shaders\BackgroundAndCharacters\ReflectiveBackgroundArbitrary.shader" />
      <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />

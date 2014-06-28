@@ -8,14 +8,28 @@ public class GUIFunctions : MonoBehaviour {
 	public bool mainMenuEnabled;
 	public bool tileSetsEnabled;
 	public bool monsterListEnabled;
+	public float width;
+	public Camera myCam;
+	Transform parent ;
+	GameObject temp ;
 
+	void Start(){
+		myCam = GameObject.FindWithTag("UI Camera").GetComponent<Camera>();
+	}
 
+	void Update(){
+		if(tileSetsEnabled){
+			//temp.transform.position = myCam.ScreenToWorldPoint(new Vector3(.005f*Screen.width,1f * Screen.height,0f));
+		}
+	}
 
 	public void OpenTileSets(){
-		Transform parent = GameObject.Find ("UI Root").transform;
-		GameObject temp = Instantiate(TileSetGUI)as GameObject;
+
+
+		parent = GameObject.Find ("UI Root").transform;
+		temp = Instantiate(TileSetGUI)as GameObject;
 		temp.transform.parent = parent;
-		temp.transform.position = new Vector3(-1, 1.5f, 0);
+		temp.transform.position = myCam.ScreenToWorldPoint(new Vector3(.005f*Screen.width,1f * Screen.height,0f));
 		temp.transform.localScale = Vector3.one;
 
 		CloseMainMenu();
@@ -27,7 +41,7 @@ public class GUIFunctions : MonoBehaviour {
 		Transform parent = GameObject.Find ("UI Root").transform;
 		GameObject temp = Instantiate(AnimalList)as GameObject;
 		temp.transform.parent = parent;
-		temp.transform.position = new Vector3(-1, 0, 0);
+		temp.transform.position = new Vector3(-1.2f, .5f, 0);
 		temp.transform.localScale = Vector3.one;
 		
 		CloseMainMenu();

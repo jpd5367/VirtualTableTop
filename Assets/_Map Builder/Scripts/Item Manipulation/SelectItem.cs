@@ -98,6 +98,10 @@ public class SelectItem : MonoBehaviour {
 			menu.transform.position = tempPos;
 		}
 
+		if(MoveGUISelected){
+
+		}
+
 	}
 
 	public void OpenOptions(){
@@ -121,14 +125,22 @@ public class SelectItem : MonoBehaviour {
 	public void OpenSelectionGUI(){
 		if(optionSelected && modSelected == ModItemSelection.Scale && ScaleGUISelected != true){// display scale adjustment GUI
 
+			Transform parent = GameObject.Find ("UI Root").transform;
 			Scaley = GameObject.Instantiate(ScaleGUI) as GameObject;
+			Scaley.transform.parent = parent;
+			Scaley.transform.position = new Vector3(.5f, 0f, 0);
+			Scaley.transform.localScale = Vector3.one*1f;
 			ScaleGUISelected = true;
 			GameObject.Find ("Scale Controller").GetComponent<ScaleController>().target = lastSelection;
 		}
 
 		if(optionSelected && modSelected == ModItemSelection.Move && MoveGUISelected != true){// display scale adjustment GUI
 
+			Transform parent = GameObject.Find ("UI Root").transform;
 			Movey = GameObject.Instantiate(MoveGUI) as GameObject;
+			Movey.transform.parent = parent;
+			Movey.transform.position = new Vector3(.5f, 0f, 0);
+			Movey.transform.localScale = Vector3.one*1f;
 			MoveGUISelected = true;
 			GameObject.Find ("Move X").GetComponent<MoveX>().target = lastSelection;
 			GameObject.Find ("Move Y").GetComponent<MoveY>().target = lastSelection;
@@ -136,8 +148,12 @@ public class SelectItem : MonoBehaviour {
 		}
 
 		if(optionSelected && modSelected == ModItemSelection.Rotate && RotateGUISelected != true){// display scale adjustment GUI
-			
+
+			Transform parent = GameObject.Find ("UI Root").transform;
 			Rotatey = GameObject.Instantiate(RotateGUI) as GameObject;
+			Rotatey.transform.parent = parent;
+			Rotatey.transform.position = new Vector3(.5f, 0f, 0);
+			Rotatey.transform.localScale = Vector3.one*1f;
 			RotateGUISelected = true;
 			GameObject.Find ("Rotate X").GetComponent<RotateX>().target = lastSelection;
 			GameObject.Find ("Rotate Y").GetComponent<RotateY>().target = lastSelection;
